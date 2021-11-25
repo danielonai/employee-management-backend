@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.43f5e2d2.chunk.css",
+    "main.js": "/static/js/main.766b750c.chunk.js",
+    "main.js.map": "/static/js/main.766b750c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d61f660a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d61f660a.js.map",
+    "static/css/2.2beb6d79.chunk.css": "/static/css/2.2beb6d79.chunk.css",
+    "static/js/2.bc34d566.chunk.js": "/static/js/2.bc34d566.chunk.js",
+    "static/js/2.bc34d566.chunk.js.map": "/static/js/2.bc34d566.chunk.js.map",
+    "static/js/3.76e1113a.chunk.js": "/static/js/3.76e1113a.chunk.js",
+    "static/js/3.76e1113a.chunk.js.map": "/static/js/3.76e1113a.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.2beb6d79.chunk.css.map": "/static/css/2.2beb6d79.chunk.css.map",
+    "static/css/main.43f5e2d2.chunk.css.map": "/static/css/main.43f5e2d2.chunk.css.map",
+    "static/js/2.bc34d566.chunk.js.LICENSE.txt": "/static/js/2.bc34d566.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/static/media/AirbnbCerealMedium.60c1c921.ttf",
+    "static/media/bali.96e37270.jpg": "/static/media/bali.96e37270.jpg",
+    "static/media/bangkok.f9fefa19.jpg": "/static/media/bangkok.f9fefa19.jpg",
+    "static/media/barcelona.f0360b92.jpg": "/static/media/barcelona.f0360b92.jpg",
+    "static/media/hero-cut.a1c640f5.jpg": "/static/media/hero-cut.a1c640f5.jpg",
+    "static/media/home.6db1810d.jpg": "/static/media/home.6db1810d.jpg",
+    "static/media/hong kong.6422e743.jpg": "/static/media/hong kong.6422e743.jpg",
+    "static/media/host.e309b4f3.jpg": "/static/media/host.e309b4f3.jpg",
+    "static/media/london.85225272.jpg": "/static/media/london.85225272.jpg",
+    "static/media/new york.ed1f88f7.jpg": "/static/media/new york.ed1f88f7.jpg",
+    "static/media/outdoor.745432f6.jpg": "/static/media/outdoor.745432f6.jpg",
+    "static/media/paris.b8dbc6a0.jpg": "/static/media/paris.b8dbc6a0.jpg",
+    "static/media/pets.bfd305d0.jpg": "/static/media/pets.bfd305d0.jpg",
+    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf",
+    "static/media/tel-aviv-yafo.24af19f4.jpg": "/static/media/tel-aviv-yafo.24af19f4.jpg",
+    "static/media/unique.f68e06e5.jpg": "/static/media/unique.f68e06e5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d61f660a.js",
+    "static/css/2.2beb6d79.chunk.css",
+    "static/js/2.bc34d566.chunk.js",
+    "static/css/main.43f5e2d2.chunk.css",
+    "static/js/main.766b750c.chunk.js"
+  ]
+}
