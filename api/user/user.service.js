@@ -11,11 +11,10 @@ module.exports = {
     add
 }
 
-async function query(filterBy = {}) {
-    const criteria = filterBy
+async function query() {
     try {
         const collection = await dbService.getCollection('user')
-        var users = await collection.find(criteria).toArray()
+        var users = await collection.find().toArray()
         users = users.map(user => {
             delete user.password
             user.createdAt = ObjectId(user._id).getTimestamp()
@@ -79,17 +78,17 @@ async function update(user) {
 async function add(user) {
     try {
         // peek only updatable fields!
+        // console.log('user from user service', user);
         const userToAdd = {
-            username: user.username,
+            isEmployer: false,
+            phoneNumber: user.phoneNumber,
             password: user.password,
-            fullname: user.fullname,
-            imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRflAWTCotVaUKTTTtBTP3qp3k629ivUsHq1aVTCFV904LAJMamLEREsztxvCFG0LV6luw&usqp=CAU',
-            isAdmin: false,
-            notifications: {
-                'trips': 0,
-                'orders': 0
-            }
+            fullName: user.fullName,
+            isWorking: false,
+            totalSessions: 0,
+            monthlyHours: 0
         }
+        console.log(`userToAdd:`, userToAdd)
         const collection = await dbService.getCollection('user')
         await collection.insertOne(userToAdd)
         return userToAdd

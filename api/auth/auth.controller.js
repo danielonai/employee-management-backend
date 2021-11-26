@@ -3,7 +3,6 @@ const authService = require('./auth.service')
 async function login(req, res) {
     const { phoneNumber, password } = req.body
     try {
-        console.log('num', phoneNumber);
         const user = await authService.login(phoneNumber, password)
         req.session.user = user
         res.json(user)
@@ -11,21 +10,19 @@ async function login(req, res) {
         res.status(401).send({ err: 'Failed to Login' })
     }
 }
-async function signup(req, res) {
+async function signUp(req, res) {
     try {
-        const { username, password, fullname } = req.body
+        const { phoneNumber, password, fullName } = req.body
         // Never log passwords
-        const account = await authService.signup(username, password, fullname)
-        const user = await authService.login(username, password)
-        req.session.user = user
-        console.log('session user:', req.session);
+        const user = await authService.signup(phoneNumber, password, fullName)
         res.json(user)
     } catch (err) {
+        console.log(`err`, err)
         res.status(500).send({ err: 'Failed to signup' })
     }
 }
 
-async function logout(req, res){
+async function logout(req, res) {
     try {
         // req.session.destroy()
         req.session.user = null;
@@ -37,6 +34,6 @@ async function logout(req, res){
 
 module.exports = {
     login,
-    signup,
+    signUp,
     logout
 }
